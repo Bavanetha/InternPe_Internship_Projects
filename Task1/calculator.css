@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    height:90vh;
+    margin: 0 0 0 20px;
+    color:blueviolet;
+    background:linear-gradient(25deg,rgb(143, 147, 110),rgb(212, 212, 187)) ;
+    
+}
+h1{
+    font-family: Georgia,serif, 'Times New Roman', Times;
+    margin: 5% 0% 3% 0%;
+}
+input[type="button"]{
+    width:90%;
+    height:60px;
+    background-color: rgb(205, 98, 98);
+    border-color: rgb(146, 146, 144);
+    border-radius: 30%;
+    color:azure;
+    font-size: medium;
+}
+input[type="text"]{
+    width:96%;
+    height:50px;
+    border:solid rgb(92, 85, 83) 2px;
+    border-radius: 10px;
+    background-color: rgb(251, 228, 232);
+    color:rgb(253, 6, 55);
+    font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',  Arial, sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+    margin:0% 1%;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(210, 75, 75);
+    border-color: rgb(241, 219, 26);
+}
+table{
+    background-color: rgb(243, 192, 199);
+    border-color: rgb(104, 51, 51);
+    border-radius: 10%;
+    width: 24%;
+    height:500px;
+    padding :15px 10px;
+    box-shadow: 0 0 10px rgba(104, 51, 51, 0.8);
+}
+table td{
+    border-color: rgb(247, 210, 216);
+    border : 0;
+    width : 20%;
+}

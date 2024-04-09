@@ -1,0 +1,136 @@
+body{
+    height:100vh;
+    background:linear-gradient(290deg ,rgb(178, 198, 207),rgb(209, 169, 206)) ;
+    background-position: center;
+    background-size: cover;
+    margin:0px;
+}
+
+.main{
+    margin:100px  450px;
+    background-color: rgb(247, 216, 202);
+    border-radius: 20px;
+}
+
+.title{
+    background-color: rgb(200, 138, 107);
+    padding:15px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 43px;
+    color: rgb(109, 3, 65);
+}
+
+.input_div{
+    padding:40px 35px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.input_div input{
+    width:480px;
+    font-size: medium;
+    padding:5px;
+    outline: none;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    border:1px solid rgb(126, 121, 121)
+}
+
+.input_div button{
+    font-size:40px;
+    padding:1.8px 15px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(219, 132, 2);
+    border:1px solid rgb(219, 132, 2);
+    color:rgb(5, 5, 98);
+}
+
+.input_div button:hover{
+    color:rgb(49, 49, 223);
+}
+
+#list{
+    padding:10px 0px;
+    margin-right:40px;
+    line-height: 40px;
+}
+
+#list ul li{
+    margin:10px 10px;
+    padding:10px 0px 10px 40px;
+    font-size:23px;
+    font-weight: 600;
+    color: rgb(6, 52, 93);
+    list-style-type:none;
+    background-color: rgb(195, 192, 150);
+    cursor: pointer;
+    position:relative;
+}
+
+#list ul li::before{
+    content : " ";
+    position:absolute;
+    height:35px;
+    width:33px;
+    background-image: url("D:/html files/InternPe/Task3/Screenshot_2024-03-06_231648-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    top:15px;
+    left:8px;
+}
+
+#list ul li.checked{
+    background-color: rgb(251, 163, 163);
+    color: rgb(53, 84, 113);
+    text-decoration: line-through;
+}
+
+#list ul li.checked::before{
+    background-image: url("D:/html files/InternPe/Task3/th-removebg-preview.png");
+    width:30px;
+    height:30px;
+}
+
+ul li span{
+    position: absolute;
+    right:0;
+    top:0;
+    padding:10px 15px;
+    
+    text-align: center;
+    color: rgb(232, 22, 50);
+}
+
+ul li span:hover{
+    background-color: rgb(189, 43, 48);
+    color: white;
+}
+
+@media (max-width:799px){
+
+    .main{
+        margin:50px  50px;
+    }
+    
+    #list ul li{
+        margin:10px 10px;
+        padding:5px 0px 0px 42px;
+        font-size:20px;
+        font-weight: 500;
+    }
+
+    #list ul li::before{
+        top:7px;
+        left:8px;
+    }
+    ul li span{
+        padding:5px 10px;
+    }    
+}
